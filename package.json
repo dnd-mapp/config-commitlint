@@ -36,6 +36,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
+    "prepare": "lefthook install",
     "prepublishOnly": "pnpm run build && prepare-dist",
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest --ui",
@@ -78,6 +79,7 @@
     "@types/node": "catalog:",
     "@vitest/coverage-v8": "catalog:vitest",
     "@vitest/ui": "catalog:vitest",
+    "lefthook": "catalog:commitlint",
     "markdownlint-cli2": "catalog:markdown",
     "prettier": "catalog:prettier",
     "prettier-plugin-organize-imports": "catalog:prettier",
