@@ -41,7 +41,15 @@
       "onFail": "error"
     }
   },
+  "dependencies": {
+    "@commitlint/config-conventional": "catalog:commitlint"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^21"
+  },
   "devDependencies": {
+    "@commitlint/cli": "catalog:commitlint",
+    "@commitlint/types": "catalog:commitlint",
     "@dnd-mapp/config-markdown": "catalog:markdown",
     "@dnd-mapp/config-prettier": "catalog:prettier",
     "@dnd-mapp/config-typescript": "catalog:",

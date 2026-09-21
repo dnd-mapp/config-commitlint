@@ -25,6 +25,10 @@ catalog:
   "@types/node": ~24.13.5
   typescript: ~6.0.3
 catalogs:
+  commitlint:
+    "@commitlint/cli": ~21.2.2
+    "@commitlint/config-conventional": ~21.2.2
+    "@commitlint/types": ~21.2.0
   markdown:
     "@dnd-mapp/config-markdown": ~1.0.0
     markdownlint-cli2: ~0.23.2
