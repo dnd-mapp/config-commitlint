@@ -38,6 +38,8 @@
   "scripts": {
     "prepublishOnly": "pnpm run build && prepare-dist",
     "build": "tsc -p tsconfig.build.json",
+    "test": "vitest --ui",
+    "test-ci": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
     "lint-md": "markdownlint-cli2",
     "format": "prettier -w .",
@@ -66,15 +68,21 @@
   },
   "devDependencies": {
     "@commitlint/cli": "catalog:commitlint",
+    "@commitlint/lint": "catalog:commitlint",
+    "@commitlint/load": "catalog:commitlint",
     "@commitlint/types": "catalog:commitlint",
     "@dnd-mapp/config-markdown": "catalog:markdown",
     "@dnd-mapp/config-prettier": "catalog:prettier",
     "@dnd-mapp/config-typescript": "catalog:",
     "@dnd-mapp/package-builder": "catalog:",
     "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:vitest",
+    "@vitest/ui": "catalog:vitest",
     "markdownlint-cli2": "catalog:markdown",
     "prettier": "catalog:prettier",
     "prettier-plugin-organize-imports": "catalog:prettier",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vite": "catalog:vitest",
+    "vitest": "catalog:vitest"
   }
 }
