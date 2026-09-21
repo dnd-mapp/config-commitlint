@@ -178,6 +178,9 @@ catalogs:
     '@dnd-mapp/config-typescript':
       specifier: ~1.0.0
       version: 1.0.0
+    '@dnd-mapp/package-builder':
+      specifier: ~1.0.0
+      version: 1.0.0
     '@types/node':
       specifier: ~24.13.5
       version: 24.13.5
@@ -225,6 +228,9 @@ importers:
       '@dnd-mapp/config-typescript':
         specifier: 'catalog:'
         version: 1.0.0(typescript@6.0.3)
+      '@dnd-mapp/package-builder':
+        specifier: 'catalog:'
+        version: 1.0.0
       '@types/node':
         specifier: 'catalog:'
         version: 24.13.5
@@ -367,6 +373,11 @@ packages:
     engines: {node: ^24.21.0}
     peerDependencies:
       typescript: ^6
+
+  '@dnd-mapp/package-builder@1.0.0':
+    resolution: {integrity: sha512-1Gn43f1b3M2bQqa7YyjgrLRN+0J6fYfHFhDb3xr7E6q5KBc5Zd7moFXxBeIn+ZgmDS38e016hgY9D0Ov9Yzf8Q==}
+    engines: {node: ^24.21.0}
+    hasBin: true
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1015,6 +1026,8 @@ snapshots:
   '@dnd-mapp/config-typescript@1.0.0(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
+
+  '@dnd-mapp/package-builder@1.0.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
