@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.schemastore.org/package.json",
   "name": "@dnd-mapp/config-commitlint",
-  "description": "Commitlint configuration shared across D&D Mapp projects.",
+  "description": "Shared commitlint config that extends the conventional config and enforces Conventional Commits.",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",

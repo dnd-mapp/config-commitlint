@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@dnd-mapp/config-commitlint)](https://www.npmjs.com/package/@dnd-mapp/config-commitlint)
 [![license](https://img.shields.io/npm/l/@dnd-mapp/config-commitlint)](LICENSE)
 
-Shared commitlint config for all D&D Mapp projects. It extends [`@commitlint/config-conventional`](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional), which enforces [Conventional Commits](https://www.conventionalcommits.org/).
+Shared commitlint config that extends [`@commitlint/config-conventional`](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional), which enforces [Conventional Commits](https://www.conventionalcommits.org/).
 
 ## Requirements
 
