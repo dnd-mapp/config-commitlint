@@ -29,12 +29,12 @@ Newly published releases are held back for three days through `minimumReleaseAge
 
 [Lefthook](https://lefthook.dev/) installs the Git hooks when you run `pnpm install`. The hooks are defined in `lefthook.yaml`.
 
-| Hook         | Runs                                    | On                        |
-|:-------------|:----------------------------------------|:--------------------------|
-| `pre-commit` | Prettier and markdownlint-cli2 checks   | The staged files          |
-| `commit-msg` | commitlint with the config of this repo | The message of the commit |
+| Hook         | Runs                                           | On                        |
+|:-------------|:-----------------------------------------------|:--------------------------|
+| `pre-commit` | Prettier, markdownlint-cli2, and ESLint checks | The staged files          |
+| `commit-msg` | commitlint with the config of this repo        | The message of the commit |
 
-The pre-commit hooks only check files. Run `pnpm run format` to fix formatting issues, and stage the result.
+The pre-commit hooks only check files. Run `pnpm run format` to fix formatting issues, and `pnpm exec eslint --fix` to apply the fixes that ESLint can make. Stage the result.
 
 ## Changing the config
 
@@ -54,18 +54,19 @@ When you add or change a rule, update the "Rules" section of the README in the s
 
 Tests use Vitest and load the config with `@commitlint/load` and `@commitlint/lint`. Add a test for every rule that you add or change. Coverage must stay above the thresholds in `vitest.config.ts`.
 
-Check and format the repository with these commands. CI runs `format-check`, `lint-md`, `typecheck`, `test-ci`, and `build`. Run them yourself before you open a pull request.
+Check and format the repository with these commands. CI runs `format-check`, `lint-md`, `lint-ts`, `typecheck`, `test-ci`, and `build`. Run them yourself before you open a pull request.
 
 ```bash
 pnpm run format-check
 pnpm run format
 pnpm run lint-md
+pnpm run lint-ts
 pnpm run typecheck
 pnpm run test-ci
 pnpm run build
 ```
 
-The `lint-md` script lints the Markdown files with markdownlint. Use `pnpm test` to run the tests in watch mode with the Vitest UI.
+The `lint-md` script lints the Markdown files with markdownlint, and the `lint-ts` script lints the code with ESLint. Use `pnpm test` to run the tests in watch mode with the Vitest UI.
 
 ## Changelog and versioning
 
