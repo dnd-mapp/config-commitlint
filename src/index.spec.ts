@@ -8,7 +8,7 @@ async function lintMessage(message: string) {
     const options: NonNullable<Parameters<typeof lint>[2]> = {};
 
     if (parserPreset?.parserOpts) {
-        options.parserOpts = parserPreset.parserOpts as NonNullable<typeof options.parserOpts>;
+        options.parserOpts = parserPreset.parserOpts;
     }
     return lint(message, rules, options);
 }
