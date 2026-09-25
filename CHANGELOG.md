@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- `@commitlint/config-conventional` is now declared with a caret range instead of a tilde range. Consumers get its minor releases without waiting for a new release of this package.
+
 ## [1.0.0] - 2026-09-21
 
 ### Added
