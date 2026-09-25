@@ -74,6 +74,15 @@ This project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Enabling a stricter rule or lowering a limit can make commits that passed before fail in consumer projects. Treat it as a breaking change and say so in the changelog entry.
 
+## Releasing
+
+1. Open a pull request with a single `chore: release X.Y.Z` commit. It sets `version` in `package.json`, renames `[Unreleased]` to `[X.Y.Z] - YYYY-MM-DD`, adds a fresh `[Unreleased]`, and updates the link references.
+2. Merge it, then create an annotated tag `vX.Y.Z` on the merge commit and push the tag.
+3. The [release workflow](.github/workflows/release.yaml) runs the CI checks, verifies the tag and the changelog, stages the package on npm, and creates the GitHub Release.
+4. Find the staged version with `pnpm stage list` and approve it with `pnpm stage approve <id>` and 2FA.
+
+If the staged version is wrong, reject it with `pnpm stage reject <id>`. The same version cannot be staged again until then.
+
 ## Code style
 
 Follow the rules in `.editorconfig`.
