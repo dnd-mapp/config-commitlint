@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-09-25
+
 ### Changed
 
 - `@commitlint/config-conventional` is now declared with a caret range instead of a tilde range. Consumers get its minor releases without waiting for a new release of this package.
@@ -18,5 +20,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Type declarations for the config. It is typed as a commitlint `UserConfig`.
 - `@commitlint/cli` 21 as a peer dependency. `@commitlint/config-conventional` is a regular dependency, so consumers do not install it.
 
-[Unreleased]: https://github.com/dnd-mapp/config-commitlint/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/dnd-mapp/config-commitlint/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/dnd-mapp/config-commitlint/releases/tag/v1.1.0
 [1.0.0]: https://github.com/dnd-mapp/config-commitlint/releases/tag/v1.0.0
