@@ -184,6 +184,9 @@ catalogs:
       specifier: ~2.1.14
       version: 2.1.14
   default:
+    '@dnd-mapp/changelog-tools':
+      specifier: ~1.0.0
+      version: 1.0.0
     '@dnd-mapp/config-typescript':
       specifier: ~1.0.0
       version: 1.0.0
@@ -254,6 +257,9 @@ importers:
       '@commitlint/types':
         specifier: catalog:commitlint
         version: 21.2.0
+      '@dnd-mapp/changelog-tools':
+        specifier: 'catalog:'
+        version: 1.0.0
       '@dnd-mapp/config-eslint':
         specifier: catalog:eslint
         version: 1.0.0(eslint@10.11.0)(typescript@6.0.3)
@@ -421,6 +427,11 @@ packages:
   '@conventional-changelog/template@1.4.0':
     resolution: {integrity: sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==}
     engines: {node: '>=22'}
+
+  '@dnd-mapp/changelog-tools@1.0.0':
+    resolution: {integrity: sha512-f8WnQ0SSKS/iNloOwF6TuDpMp/TFAlgb2oxKJ1n/fz8LpDY+KPvKfLyeer7XzAWDVCxDHfIb9p05Vh0PcRMm+A==}
+    engines: {node: ^24.21.0}
+    hasBin: true
 
   '@dnd-mapp/config-eslint@1.0.0':
     resolution: {integrity: sha512-uLM2vfmgg/iFgaSekuW74FDstuaGLEtwCW2NvuITuoSnYpl8oobrQiISYKAaEr7jEux7EoToyFH5AL2yjbvsDg==}
@@ -1985,6 +1996,8 @@ snapshots:
       conventional-commits-parser: 7.1.2
 
   '@conventional-changelog/template@1.4.0': {}
+
+  '@dnd-mapp/changelog-tools@1.0.0': {}
 
   '@dnd-mapp/config-eslint@1.0.0(eslint@10.11.0)(typescript@6.0.3)':
     dependencies:

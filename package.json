@@ -72,6 +72,7 @@
     "@commitlint/lint": "catalog:commitlint",
     "@commitlint/load": "catalog:commitlint",
     "@commitlint/types": "catalog:commitlint",
+    "@dnd-mapp/changelog-tools": "catalog:",
     "@dnd-mapp/config-eslint": "catalog:eslint",
     "@dnd-mapp/config-markdown": "catalog:markdown",
     "@dnd-mapp/config-prettier": "catalog:prettier",
