@@ -22,6 +22,8 @@ Dependency versions live in the catalogs in `pnpm-workspace.yaml`, which uses `c
 
 Newly published releases are held back for three days through `minimumReleaseAge`. You may need to wait before you can bump to a very recent version.
 
+Install [actionlint](https://github.com/rhysd/actionlint) to lint the workflows locally, for example with `brew install actionlint`. CI runs the version that `.github/actions/ci/action.yaml` pins.
+
 ## Git hooks
 
 [Lefthook](https://lefthook.dev/) installs the Git hooks when you run `pnpm install`. The hooks are defined in `lefthook.yaml`.
@@ -51,7 +53,7 @@ When you add or change a rule, update the "Rules" section of the README in the s
 
 Tests use Vitest and load the config with `@commitlint/load` and `@commitlint/lint`. Add a test for every rule that you add or change. Coverage must stay above the thresholds in `vitest.config.ts`.
 
-Check and format the repository with these commands. CI runs `format-check`, `lint-md`, `lint-ts`, `typecheck`, `test-ci`, and `build`. Run them yourself before you open a pull request.
+Check and format the repository with these commands. CI runs `format-check`, `lint-md`, `lint-ts`, `typecheck`, `test-ci`, `build`, and actionlint. Run them yourself before you open a pull request.
 
 ```bash
 pnpm run format-check
@@ -61,6 +63,7 @@ pnpm run lint-ts
 pnpm run typecheck
 pnpm run test-ci
 pnpm run build
+actionlint
 ```
 
 The `lint-md` script lints the Markdown files with markdownlint, and the `lint-ts` script lints the code with ESLint. Use `pnpm test` to run the tests in watch mode with the Vitest UI.
