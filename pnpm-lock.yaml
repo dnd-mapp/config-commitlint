@@ -185,8 +185,8 @@ catalogs:
       version: 2.1.14
   default:
     '@dnd-mapp/changelog-tools':
-      specifier: ~1.1.0
-      version: 1.1.0
+      specifier: ~1.1.1
+      version: 1.1.1
     '@dnd-mapp/config-typescript':
       specifier: ~1.1.0
       version: 1.1.0
@@ -259,7 +259,7 @@ importers:
         version: 21.2.0
       '@dnd-mapp/changelog-tools':
         specifier: 'catalog:'
-        version: 1.1.0
+        version: 1.1.1
       '@dnd-mapp/config-eslint':
         specifier: catalog:eslint
         version: 1.1.0(eslint@10.11.0)(typescript@6.0.3)
@@ -428,8 +428,8 @@ packages:
     resolution: {integrity: sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==}
     engines: {node: '>=22'}
 
-  '@dnd-mapp/changelog-tools@1.1.0':
-    resolution: {integrity: sha512-V4McNYmJitQ2byYCDJGX7RbogXWD6zu16UgyBVbUw0uwvFdyaeDZYLp1jjmoCNkyjuFCLHu4+CtTlMBsmS7+rg==}
+  '@dnd-mapp/changelog-tools@1.1.1':
+    resolution: {integrity: sha512-KfEyjfAkbu9WbgriLKgKlh211ONDQeEI4J3/hEBwIdLBtBi52CI3yyklyOn/9Ze6XXZ8cPn3LV6Wu+Ey5Gx2bA==}
     engines: {node: ^24.21.0}
     hasBin: true
 
@@ -1997,7 +1997,7 @@ snapshots:
 
   '@conventional-changelog/template@1.4.0': {}
 
-  '@dnd-mapp/changelog-tools@1.1.0': {}
+  '@dnd-mapp/changelog-tools@1.1.1': {}
 
   '@dnd-mapp/config-eslint@1.1.0(eslint@10.11.0)(typescript@6.0.3)':
     dependencies:
