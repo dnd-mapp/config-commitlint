@@ -25,7 +25,7 @@ catalog:
   "@dnd-mapp/changelog-tools": ~1.1.1
   "@dnd-mapp/config-typescript": ~1.1.0
   "@dnd-mapp/package-builder": ~1.0.0
-  "@types/node": ~24.13.6
+  "@types/node": ~24.19.1
   typescript: ~6.0.3
 catalogs:
   commitlint:
