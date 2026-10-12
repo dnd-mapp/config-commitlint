@@ -34,10 +34,10 @@ catalogs:
     "@commitlint/lint": ~21.2.3
     "@commitlint/load": ~21.2.3
     "@commitlint/types": ~21.2.3
-    lefthook: ~2.1.16
+    lefthook: ~2.2.1
   eslint:
     "@dnd-mapp/config-eslint": ~1.1.0
-    eslint: ~10.11.0
+    eslint: ~10.12.0
   markdown:
     "@dnd-mapp/config-markdown": ~1.0.0
     markdownlint-cli2: ~0.23.3
@@ -48,5 +48,5 @@ catalogs:
   vitest:
     "@vitest/coverage-v8": ~5.0.3
     "@vitest/ui": ~5.0.3
-    vite: ~8.3.2
+    vite: ~8.3.4
     vitest: ~5.0.3
